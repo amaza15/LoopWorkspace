@@ -245,6 +245,9 @@ jobs:
           # and make sure to specify the submodule by setting "--directory=(submodule_name)".
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
+
+          # Commit for guardrails (lowers bounds to 65 and 70) 3/8/24
+          curl https://github.com/amaza15/LoopKit/commit/49fbd036582306678a708425f71ea8a74730fcf5.patch | git apply -v --directory=LoopKit
           
           
       # Patch Fastlane Match to not print tables
